@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    background-image: url('toenail.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-attachment: fixed; /* Ensure the background image stays fixed during scrolling */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width/height */
+}
+
+h1 {
+    font-family: 'Impact', sans-serif;
+    font-size: 3em; /* Adjusted font size for better fit */
+    margin: 20px 0;
+    padding: 10px 20px; /* Add padding for better visibility */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background color */
+    border-radius: 10px; /* Rounded corners for the title box */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for better contrast */
+    text-align: center; /* Center-align text */
+}
+
+#game-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Adjusted gap for spacing */
+    background: rgba(255, 255, 255, 0.8); /* Add a background color to make the game board more readable */
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width/height */
+    max-width: 90vw; /* Increased width to make the container slightly larger */
+    max-height: 90vh; /* Adjust height to ensure it fits within the viewport height */
+    overflow: auto; /* Enable scrolling if necessary */
+}
+
+#score-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px; /* Increased space between the game board and the score board */
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 120px); /* Increased size for the grid columns */
+    grid-gap: 15px; /* Increased gap between cells */
+}
+
+.cell {
+    width: 120px; /* Increased cell size */
+    height: 120px; /* Increased cell size */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+button {
+    padding: 15px 25px; /* Increased button padding */
+    font-size: 1.2em; /* Increased button font size */
+    cursor: pointer;
+    margin-top: 20px;
+}
