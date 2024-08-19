@@ -15,13 +15,13 @@
 1. **Clone the Repository**
    - Clone the repository to your local machine using:
      ```bash
-     git clone https://github.com/yourusername/tic-tac-toe-nail.git
+     git clone https://github.com/eisaac-png/tic-tac-toe-nail.git
      ```
-   - Replace `yourusername` with your GitHub username.
+   - Replace `eisaac-png` with your GitHub username.
 
 2. **File Structure**
    - Ensure that the following files are present:
-     - `index.html` (Homepage)
+     - `homepage.html` (Homepage)
      - `tic-tac-toe.html` (Game page)
      - `style.css` (Styling for the pages)
      - `script.js` (JavaScript logic for the game)
@@ -29,7 +29,7 @@
      - `README.md` (This file)
 
 3. **Running the Game**
-   - Open `index.html` in your web browser to start the game.
+   - Open `homepage.html` in your web browser to start the game.
 
 ## Technical Dependencies
 
