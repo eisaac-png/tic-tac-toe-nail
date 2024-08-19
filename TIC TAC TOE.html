@@ -5,33 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIC TAC TOE...NAIL?</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('toenail.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-family: 'Impact', sans-serif;
+            font-size: 3em;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        #game-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        #score-board {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 20px;
+        }
+        #game-board {
+            display: grid;
+            grid-template-columns: repeat(4, 120px);
+            grid-gap: 15px;
+        }
+        .cell {
+            width: 120px;
+            height: 120px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        button {
+            padding: 15px 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        #game-container {
+            max-width: 100%;
+            max-height: 90vh;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <h1>TIC TAC TOE...NAIL?</h1>
     <div id="game-container">
         <div id="score-board">
-            <p>Player 1 Wins: <span id="player1-score">0</span></p>
-            <p>Player 2 Wins: <span id="player2-score">0</span></p>
-            <p>Draws: <span id="draw-score">0</span></p>
+            <div>X: <span id="x-wins">0</span></div>
+            <div>O: <span id="o-wins">0</span></div>
         </div>
         <div id="game-board">
-            <!-- Updated grid to 4x4 -->
-            <div class="cell" data-index="0"></div>
-            <div class="cell" data-index="1"></div>
-            <div class="cell" data-index="2"></div>
-            <div class="cell" data-index="3"></div>
-            <div class="cell" data-index="4"></div>
-            <div class="cell" data-index="5"></div>
-            <div class="cell" data-index="6"></div>
-            <div class="cell" data-index="7"></div>
-            <div class="cell" data-index="8"></div>
-            <div class="cell" data-index="9"></div>
-            <div class="cell" data-index="10"></div>
-            <div class="cell" data-index="11"></div>
-            <div class="cell" data-index="12"></div>
-            <div class="cell" data-index="13"></div>
-            <div class="cell" data-index="14"></div>
-            <div class="cell" data-index="15"></div>
+            <!-- Add cells here -->
         </div>
     </div>
     <button id="reset-button">Reset Game</button>
